@@ -1,0 +1,119 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--VeryLightGray);
+}
+
+
+.conterner{
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+/* Small */
+@media(min-width:780px)  {
+    .conterner{
+        width: 750px;
+    }
+}
+/* Mediam */
+@media(min-width:992px) {
+    .conterner{
+        width: 970px;
+    }
+    
+}
+/* Large */
+@media(min-width:1200px){
+    .conterner{
+        width: 1120px;
+    }
+}
+
+
+
+.heding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.heding .heding1{
+    color: var(--GrayishBlue);
+    font-weight: 200;
+    font-size: 40px;
+    margin: 0px;
+}
+.heding .decripHeding{
+    display: block;
+}
+
+.heding p{
+    color: var(--GrayishBlue);
+    font-size: 15px;
+}
+.conterner .cards{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.cards .box1,
+.cards .box2 .box2-card1,
+.cards .box2 .box2-card2,
+.cards .box3{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+    border-top: solid 3px var(--Red);
+    box-shadow: 0px 10px 10px 5px rgba(128, 128, 128, 0.158);
+}
+.cards .box2 .box2-card1{
+    border-top: solid 3px var(--Orange);
+    margin-bottom: 30px;
+}
+.cards .box3{
+    border-top: solid 3px var(--Blue);
+}
+.cards .box1{
+    border-top: solid 3px var(--Cyan);
+}
+
+h3{
+    margin-top: 5px;
+}
+.cards p{
+    color: var(--GrayishBlue);
+}
+.icon{
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+footer{
+    font-size: 12px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
